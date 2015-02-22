@@ -6,9 +6,9 @@ var RouteHandler = Router.RouteHandler;
 module.exports = React.createClass({
     render: function() {
         return(
-            <div>
+            <div className="container">
                 <header>
-                    <ul>
+                    <ul className="nav nav-pills">
                         <li>
                             <Link to="app"> Home </Link>
                         </li>

@@ -1,7 +1,13 @@
+require('./_assets/styles/material.less');
+
 var React = require('react');
+var injectReactTapEventPlugin = require('react-tap-event-plugin');
 var Router = require('react-router');
 var Route = Router.Route;
 var DefaultRoute = Router.DefaultRoute;
+
+injectReactTapEventPlugin();
+
 
 
 var App = require('./app.jsx');
@@ -9,7 +15,7 @@ var Root = require('./root/root.coffee');
 
 var Recipes = require('./recipes/main.coffee');
 var Index = require('./recipes/index/index.jsx');
-var NewRecipe = require('./recipes/new/new.jsx');
+var NewRecipe = require('./recipes/new/new.coffee');
 
 
 var routes = (
