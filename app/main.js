@@ -15,7 +15,7 @@ var Root = require('./root/root.coffee');
 
 var Recipes = require('./recipes/main.coffee');
 var Index = require('./recipes/index/index.jsx');
-var NewRecipe = require('./recipes/new/new.coffee');
+var NewRecipe = require('./recipes/new/new.cjsx');
 
 
 var routes = (

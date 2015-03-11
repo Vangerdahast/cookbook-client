@@ -30,7 +30,8 @@ module.exports = {
     module: {
         noParse: [],
         loaders: [
-            {test: /\.js$|.jsx$/,                       loader: 'jsx-loader?harmony'},
+            {test: /\.js$|.jsx$|.coffe$/,               loader: 'jsx-loader?harmony'},
+            {test: /\.cjsx$/,                           loader: 'coffee-jsx-loader'},
             {test: /\.coffee$/,                         loader: 'coffee-loader'},
             {test: /\.sass$/,                           loader: 'style-loader!css-loader!sass-loader'},
             {test: /\.less/,                            loader: 'style-loader!css-loader!less-loader'},
