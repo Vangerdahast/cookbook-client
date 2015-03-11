@@ -9,14 +9,18 @@ statusStore = require("./store/status_store.coffee")
 module.exports = React.createClass
   mixins: [Reflux.ListenerMixin]
 
+  getInitialState: ->
+    {status: true}
+
   componentDidMount: ->
     @listenTo(statusStore, @onStatusChange)
+
   onStatusChange: (status) ->
     console.log status
 
   invokeStatusUpdate: ->
-    statusUpdate(true)
-
+    statusUpdate(@state.status)
+    @setState({status: !@state.status})
 
   render: ->
     `<div key="newRecipe" onClick={this.invokeStatusUpdate}>
