@@ -3,7 +3,8 @@ var webpack = require('webpack');
 module.exports = {
     entry: {
         vendors: [
-            'lodash', 'react', 'react-router', 'jquery/dist/jquery.js', 'material-ui', 'bootstrapCss', 'react-tap-event-plugin'
+            'lodash', 'react', 'react-router', 'jquery/dist/jquery.js', 'material-ui', 'bootstrapCss', 'react-tap-event-plugin',
+            'reflux'
         ],
         app: [
             'webpack/hot/dev-server', './app/main.js', './app/recipes/main.coffee'
